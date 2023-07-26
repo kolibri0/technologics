@@ -10,18 +10,19 @@
     </div>
     <div class="grid-icons">
       <div class="row">
-        <div class="contain-icon"><img class="icon" src="../assets/icons8-js.svg" alt=""></div>
-        <div class="contain-icon"><img class="icon" src="../assets/icons8-python.svg" alt=""></div>
-        <div class="contain-icon"><img class="icon" src="../assets/icons8-c.svg" alt=""></div>
-        <div class="contain-icon"><img class="icon" src="../assets/icons8-c++.svg" alt=""></div>
-        <div class="contain-icon"><img class="icon" src="../assets/icons8-c-sharp-logo.svg" alt=""></div>
+        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-js.svg" alt=""></div>
+        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-python.svg" alt=""></div>
+        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-c.svg" alt=""></div>
+        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-c++.svg" alt=""></div>
+        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-c-sharp-logo.svg" alt=""></div>
       </div>
       <div class="circle"></div>
       <div class="row">
-        <div class="contain-icon"><img class="icon" src="../assets/icons8-java.svg" alt=""></div>
-        <div class="contain-icon"><img class="icon" src="../assets/icons8-ruby.svg" alt=""></div>
-        <div class="contain-icon"><img class="icon" src="../assets/icons8-rust-programming-language.svg" alt=""></div>
-        <div class="contain-icon"><img class="icon" src="../assets/icons8-swift.svg" alt=""></div>
+        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-java.svg" alt=""></div>
+        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-ruby.svg" alt=""></div>
+        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-rust-programming-language.svg" alt="">
+        </div>
+        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-swift.svg" alt=""></div>
       </div>
     </div>
   </div>
