@@ -1,12 +1,13 @@
 <template>
   <div class="languages-page">
     <div class="content">
+      <h1 class="title">Languages</h1>
       <div class="contain-table">
         <table class="up" cellpadding="0" cellspacing="0" border="0">
           <thead>
             <tr class="tr-up">
               <th>Name</th>
-              <th>Date</th>
+              <th>Date<br>Created</th>
               <th>Type</th>
               <th>Compiled /<br>Interpreted</th>
               <th>Complexity</th>
@@ -17,47 +18,26 @@
       <div class="tbl-content">
         <table class="down" cellpadding="0" cellspacing="0" border="0">
           <tbody>
-            <tr>
-              <td>AAC</td>
-              <td>AUSTRALIAN COMPANY </td>
-              <td>$1.38</td>
-              <td>+2.01</td>
-              <td>-0.36%</td>
-            </tr>
-            <tr>
-              <td>AAD</td>
-              <td>AUSENCO</td>
-              <td>$2.38</td>
-              <td>-0.01</td>
-              <td>-1.36%</td>
-            </tr>
-            <tr>
-              <td>AAX</td>
-              <td>ADELAIDE</td>
-              <td>$3.22</td>
-              <td>+0.01</td>
-              <td>+1.36%</td>
-            </tr>
-            <tr>
-              <td>XXD</td>
-              <td>ADITYA BIRLA</td>
-              <td>$1.02</td>
-              <td>-1.01</td>
-              <td>+2.36%</td>
-            </tr>
-            <tr>
-              <td>XXD</td>
-              <td>ADITYA BIRLA</td>
-              <td>$1.02</td>
-              <td>-1.01</td>
-              <td>+2.36%</td>
+            <tr v-for="language in languages" v-bind:key="language.id">
+              <td><router-link class="no" :to="{ path: `/language/${language.id}` }">{{ language.name }}</router-link>
+              </td>
+              <td>{{ language.date }}</td>
+              <td>{{ language.type }}</td>
+              <td>{{ language.interpretation }}</td>
+              <td>{{ language.lvl }}</td>
             </tr>
           </tbody>
         </table>
+        <div class="elipse"></div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+import languages from "../components/languages.ts";
+console.log(languages);
+</script>
 
 <style>
 /* h1 {
@@ -69,12 +49,23 @@
   margin-bottom: 15px;
 } */
 
+
+.contain-table {
+  margin-top: 50px;
+}
+
+
+.tbl-content {
+  position: relative;
+}
+
 table {
-  width: 1100px;
+  width: 1150px;
   margin: 0 auto;
   table-layout: fixed;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(175, 175, 175, 0.1);
   overflow: hidden;
+  z-index: 123123;
 }
 
 .up {
@@ -90,8 +81,9 @@ th {
   padding: 20px 15px;
   text-align: left;
   font-weight: 500;
-  font-size: 15px;
-  color: #fff;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  display: table-cell;
   text-transform: uppercase;
 }
 
@@ -99,9 +91,28 @@ td {
   padding: 15px;
   text-align: left;
   vertical-align: middle;
-  font-weight: 300;
-  font-size: 12px;
-  color: #fff;
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.9);
   border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.no {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.elipse {
+  position: absolute;
+  width: 1161px;
+  height: 467px;
+  border-radius: 1161px;
+  opacity: 0.44999998807907104;
+  background: linear-gradient(180deg, #C173FF 0%, #70EEFF 100%);
+  filter: blur(234px);
+  top: -130px;
+  right: 380px;
+  z-index: -123123123;
 }
 </style>
