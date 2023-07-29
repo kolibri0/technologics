@@ -116,4 +116,58 @@ export default defineComponent({
   cursor: pointer;
   z-index: 123234324;
 }
+
+@media (max-width: 768px) {
+  .text {
+    width: 550px;
+    margin: 0 auto 30px;
+  }
+
+  .row {
+    grid-template-columns: repeat(4, 180px);
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  .row>div:nth-child(5) {
+    /* border: 1px solid red; */
+    display: none;
+  }
+
+  .row:nth-child(3) {
+    grid-template-columns: repeat(4, 180px);
+    width: 720px;
+    margin: 20px auto;
+  }
+
+  .circle {
+    left: 180px;
+  }
+
+  @media (max-width: 375px) {
+    .title {
+      font-size: 40px;
+    }
+
+    .text {
+      width: 330px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    .row {
+      grid-template-columns: repeat(2, 180px);
+      width: 720px;
+      margin: 0 auto;
+    }
+
+    .row:nth-child(3) {
+      grid-template-columns: repeat(2, 180px);
+      width: 720px;
+      margin: 20px auto;
+    }
+
+  }
+
+}
 </style>

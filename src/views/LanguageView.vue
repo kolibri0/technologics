@@ -40,16 +40,6 @@ document.title = "Languages"
 </script>
 
 <style>
-/* h1 {
-  font-size: 30px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 15px;
-} */
-
-
 .contain-table {
   margin-top: 50px;
 }
@@ -118,5 +108,47 @@ td {
   top: -130px;
   right: 380px;
   z-index: -123123123;
+}
+
+@media (max-width: 1024px) {
+  table {
+    width: 1000px;
+  }
+
+  .elipse {
+    right: 100px;
+  }
+
+  th {
+    font-size: 18px;
+  }
+
+  td {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 720px;
+  }
+}
+
+@media (max-width: 375px) {
+  table {
+    width: 320px;
+  }
+
+  th {
+    font-size: 8px;
+  }
+
+  td {
+    font-size: 7px;
+  }
+
+  .no {
+    font-size: 8px;
+  }
 }
 </style>

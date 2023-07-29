@@ -179,9 +179,6 @@ export default {
   /* border: 1px solid red; */
 }
 
-
-
-
 .framework-name {
   font-size: 28px;
   color: rgb(255, 255, 255, 1);
@@ -200,6 +197,7 @@ export default {
   right: 0;
   bottom: -100%;
   visibility: hidden;
+  overflow-y: auto;
   background-color: rgba(73, 73, 73, 0.627);
   backdrop-filter: blur(3px);
   transition: 1s;
@@ -234,6 +232,7 @@ export default {
 
 .language-img {
   border-radius: 10px;
+  display: block;
 }
 
 .framework-item {
@@ -313,6 +312,152 @@ details[open] {
   margin-top: 50px;
 }
 
+
+@media (max-width: 1280px) {
+  .contain-desc {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .info {
+    width: 1200px;
+  }
+
+  .left {
+    /* border: 1px solid blue; */
+    min-height: 150px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contain-desc {
+    display: block;
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  .language-img {
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+  }
+
+  .info {
+    width: 900px;
+  }
+
+  .left-framework-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ellipse2 {
+    top: 1600px;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contain-desc {
+    width: 700px;
+    margin-bottom: 20px;
+  }
+
+  .language-img {
+    margin-top: 20px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  .left-framework-grid {
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .right {
+    width: 750;
+    margin: 20px auto;
+  }
+
+  .left {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .contain-desc {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+
+  .language-img {
+    margin-top: 20px;
+    width: 320px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .ellipse {
+    border-radius: 350px;
+    filter: blur(350px);
+    width: 350px;
+    height: 350px;
+    flex-shrink: 0;
+    right: 0;
+    animation: name-of-animation 12s ease-in-out infinite;
+  }
+
+  .ellipse2 {
+    border-radius: 350px;
+    filter: blur(350px);
+    width: 350px;
+    height: 200px;
+    flex-shrink: 0;
+    right: 0;
+    top: 1000px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .right-info {
+    width: 350px;
+  }
+
+  .left-framework-grid {
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .used {
+    width: 350px;
+  }
+
+  .right {
+    width: 350px;
+    margin: 20px auto;
+  }
+
+  .left {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .asd {
+    width: 350px;
+  }
+}
 
 @keyframes name-of-animation {
   0% {

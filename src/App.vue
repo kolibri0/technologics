@@ -68,4 +68,21 @@ nav a {
 nav a.router-link-exact-active {
   color: white;
 }
+
+
+@media (max-width: 375px) {
+  nav {
+    width: 300px;
+  }
+
+  .asd {
+    width: 350px;
+    height: 200px;
+    left: 0;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+}
 </style>
