@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <h1 class="title">{{ language.name }}</h1>
     <div class="contain-desc">
       <div class="desc" v-if="language.description">{{ language.description }}
@@ -7,6 +7,7 @@
       <img class="language-img" :src='language.sin' width="500" height="300" alt="">
     </div>
     <div class="info">
+      <div class="ellipse"></div>
       <div class="left">
         <div class="left-framework-grid" v-if="frameworks">
           <div class="left-framework-grid-item" v-for="framework in frameworks" v-bind:key="framework.name">
@@ -36,6 +37,7 @@
 
       <!-- </div> -->
     </div>
+    <div class="ellipse2"></div>
   </div>
 </template>
 
@@ -67,6 +69,37 @@ export default {
   min-height: 200px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.page {
+  position: relative;
+  /* border: 1px solid red; */
+  overflow-y: hidden;
+}
+
+.ellipse {
+  position: absolute;
+  top: 120px;
+  border-radius: 720px;
+  background: linear-gradient(180deg, #25a986 0%, rgba(60, 34, 13, 0) 100%);
+  filter: blur(350px);
+  width: 720px;
+  height: 720px;
+  flex-shrink: 0;
+  z-index: -5432;
+}
+
+.ellipse2 {
+  position: absolute;
+  border-radius: 720px;
+  background: linear-gradient(180deg, #e68d07 0%, rgba(60, 34, 13, 0) 100%);
+  filter: blur(350px);
+  width: 720px;
+  height: 720px;
+  flex-shrink: 0;
+  right: 0;
+  top: 1200px;
 }
 
 .left {
@@ -131,6 +164,7 @@ export default {
   background: rgb(255, 255, 255, 0.15);
   border-radius: 15px;
   margin: 0 auto;
+  z-index: 4354;
   /* box-shadow: 0 0 10px 5px #ffffff2c; */
   /* border: 1px solid red; */
 }

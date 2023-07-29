@@ -164,4 +164,18 @@ export default [
       },
     ]
   },
+  {
+    id: 6,
+    name: "Pascal",
+    date: "1969",
+    author: "Niklaus Wirth",
+    type: "To teach programming techniques",
+    lvl: 'hard',
+    used: "While Pascal is a reliable and efficient programming language, it is mainly used to teach programming techniques. In fact, it is the first language that many programmers learn. There are commercial versions of Pascal that are used, but in general, most developers favor Java, C#, C, C, etc.",
+    sin: "https://www.computerhope.com/jargon/p/pascal.jpg",
+    typingDiscipline: 'Static',
+    interpretation: 'Compiled',
+    description: "Pascal is a general-purpose, high-level language that was originally developed by Niklaus Wirth in the early 1970s. It was developed for teaching programming as a systematic discipline and to develop reliable and efficient programs. Pascal is Algol-based language and includes many constructs of Algol. Algol 60 is a subset of Pascal. Pascal offers several data types and programming structures. It is easy to understand and maintain the Pascal programs.",
+
+  },
 ]

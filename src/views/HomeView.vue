@@ -10,15 +10,20 @@
     </div>
     <div class="grid-icons">
       <div class="row">
-        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-js.svg" alt=""></div>
-        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-python.svg" alt=""></div>
-        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-c.svg" alt=""></div>
-        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-c++.svg" alt=""></div>
+        <div class="contain-icon"><router-link to="language/1"><img class="icon" src="../assets/lang/icons8-js.svg"
+              alt=""></router-link></div>
+        <div class="contain-icon"><router-link to="language/2"><img class="icon" src="../assets/lang/icons8-python.svg"
+              alt=""></router-link></div>
+        <div class="contain-icon"><router-link to="language/3"><img class="icon" src="../assets/lang/icons8-c.svg"
+              alt=""></router-link></div>
+        <div class="contain-icon"><router-link to="language/4"><img class="icon" src="../assets/lang/icons8-c++.svg"
+              alt=""></router-link></div>
         <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-c-sharp-logo.svg" alt=""></div>
       </div>
       <div class="circle"></div>
       <div class="row">
-        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-java.svg" alt=""></div>
+        <div class="contain-icon"><router-link to="language/5"><img class="icon" src="../assets/lang/icons8-java.svg"
+              alt=""></router-link></div>
         <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-ruby.svg" alt=""></div>
         <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-rust-programming-language.svg" alt="">
         </div>

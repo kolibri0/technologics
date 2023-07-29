@@ -13,7 +13,8 @@
     <div class="framework-circle-two"></div>
     <div class="grid-frameworks">
       <div class="contain-language">
-        <div class="item-icon"><img class="icon" src="../assets/lang/icons8-js.svg" alt=""></div>
+        <div class="item-icon"><router-link to="language/1"><img class="icon" src="../assets/lang/icons8-js.svg"
+              alt=""></router-link></div>
         <div class="language-frameworks-container">
           <div class="language-frameworks">
             <div class="item-framework-container">
@@ -53,7 +54,8 @@
         </div>
       </div>
       <div class="contain-language">
-        <div class="item-icon"><img class="icon" src="../assets/lang/icons8-python.svg" alt=""></div>
+        <div class="item-icon"><router-link to="language/2"><img class="icon" src="../assets/lang/icons8-python.svg"
+              alt=""></router-link></div>
         <div class="language-frameworks-container">
           <div class="language-frameworks">
             <div class="item-framework-container">
@@ -72,7 +74,8 @@
         </div>
       </div>
       <div class="contain-language">
-        <div class="item-icon"><img class="icon" src="../assets/lang/icons8-java.svg" alt=""></div>
+        <div class="item-icon"><router-link to="language/5"><img class="icon" src="../assets/lang/icons8-java.svg"
+              alt=""></router-link></div>
         <div class="language-frameworks-container">
           <div class="language-frameworks">
             <div class="item-framework-container">
@@ -94,7 +97,8 @@
         </div>
       </div>
       <div class="contain-language">
-        <div class="item-icon"><img class="icon" src="../assets/lang/icons8-c++.svg" alt=""></div>
+        <div class="item-icon"><router-link to="language/4"><img class="icon" src="../assets/lang/icons8-c++.svg"
+              alt=""></router-link></div>
         <div class="language-frameworks-container">
           <div class="language-frameworks">
             <div class="item-framework-container">
@@ -151,7 +155,6 @@ body {
   /* height: 250px; */
   height: fit-content;
   width: 310px;
-  /* z-index: 1; */
   border-radius: 10px;
   overflow: hidden;
   z-index: -234234;
