@@ -178,4 +178,34 @@ export default [
     description: "Pascal is a general-purpose, high-level language that was originally developed by Niklaus Wirth in the early 1970s. It was developed for teaching programming as a systematic discipline and to develop reliable and efficient programs. Pascal is Algol-based language and includes many constructs of Algol. Algol 60 is a subset of Pascal. Pascal offers several data types and programming structures. It is easy to understand and maintain the Pascal programs.",
 
   },
+  {
+    id: 7,
+    name: "Ruby",
+    date: "1995",
+    author: "Yukihiro Matsumoto",
+    lvl: 'mid',
+    type: "Web servers, DevOps, and web scraping",
+    used: "Ruby is most often used for creating web applications. But because it’s a general-purpose language, it can be used for many other types of programs as well. Ruby has been used in the booking site Airbnb, the streaming service Hulu, and the calorie-tracking app MyFitness Pal. This fact alone demonstrates just how versatile and powerful Ruby can be. When it comes to web development, the framework Ruby on Rails is used. Rails uses ready-made conventions that save developers time on configuring projects. It also has code generators to create parts of an application automatically, letting programmers write less code. Ruby can also be used for static site generation. In a static website, all web pages are loaded at the same time. This improves webpage loading speeds and allows for quick, easy website deployment. Web servers are another fairly obvious application for Ruby. Some existing web servers that were made using Ruby include Puma, Unicorn, and Passenger. Servers process raw incoming HTTP requests and pass them on to the correct backend applications, then handle the HTTP response that’s sent back.",
+    typingDiscipline: 'Dynamic',
+    interpretation: 'interpreted',
+    sin: "https://cdn-media-1.freecodecamp.org/images/1*yk9cvq3T5pHUsObH3XiA1Q.png",
+    description: "Ruby is a popular general-purpose object-oriented programming (OOP) language that focuses on simplicity and productivity. You can use Ruby in many fields of computer science, including web development and data analysis. When compared to other programming languages, like C or Java, Ruby is more user-friendly and easier to learn because Ruby has intuitive and English-like syntax. Even if you’ve never written a line of code in your life, you might understand what a basic Ruby program does thanks to its simple syntax. Ruby is a great candidate if you’re looking to learn your first programming language.",
+    frameworks: [
+      {
+        name: "Ruby on Rails",
+        img: "https://img2.pngdownload.id/20180824/gfo/kisspng-ruby-on-rails-logo-software-framework-unicorn-ruby-on-rails-5-5b804d22a1d260.3011829915351350106628.jpg",
+        description: "Ruby on Rails, sometimes known as 'RoR' or just 'Rails' is an open source framework for Web development in Ruby, an object-oriented programming (OOP) language similar to Perl and Python. The principle difference between Ruby on Rails and other frameworks for development lies in the speed and ease of use that developers working within the environment enjoy. Changes made to applications are immediately applied, avoiding the time consuming steps normally associated with the web development cycle. According to David Geary, a Java expert, the Ruby-based framework is five to 10 times faster than comparable Java-based frameworks."
+      },
+      {
+        name: "Sinatra",
+        img: "https://cdn.tutsplus.com/net/uploads/legacy/943_sinatra/images/singing-with-sinatra.jpg",
+        description: "Sinatra is a free and open source software web application library and domain-specific language written in Ruby. It is an alternative to other Ruby web application frameworks such as Ruby on Rails, Merb, Nitro, and Camping. It is dependent on the Rack web server interface."
+      },
+      {
+        name: "Hanami",
+        img: "https://hanamirb.org/images/logo.png",
+        description: "Ruby on Rails is one of the most popular Ruby frameworks in developer circles, but it's not the only one. There are lots of other relatively unknown frameworks, including Roda, Sinatra, and Goliath. Some of these are faster than Rails, packed full of interesting features, and might be the very tool needed for your next project."
+      }
+    ]
+  },
 ]

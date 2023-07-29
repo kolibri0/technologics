@@ -24,7 +24,8 @@
       <div class="row">
         <div class="contain-icon"><router-link to="language/5"><img class="icon" src="../assets/lang/icons8-java.svg"
               alt=""></router-link></div>
-        <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-ruby.svg" alt=""></div>
+        <div class="contain-icon"><router-link to="language/7"><img class="icon" src="../assets/lang/icons8-ruby.svg"
+              alt=""></router-link></div>
         <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-rust-programming-language.svg" alt="">
         </div>
         <div class="contain-icon"><img class="icon" src="../assets/lang/icons8-swift.svg" alt=""></div>
@@ -38,7 +39,9 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'HomeView',
-
+  setup() {
+    return document.title = "Home"
+  }
 });
 </script>
 

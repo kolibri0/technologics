@@ -36,7 +36,7 @@
 
 <script setup>
 import languages from "../components/languages.ts";
-console.log(languages);
+document.title = "Languages"
 </script>
 
 <style>
@@ -101,6 +101,10 @@ td {
   color: rgba(255, 255, 255, 0.9);
   font-size: 19px;
   text-decoration: none;
+}
+
+.no:hover {
+  text-decoration: underline rgb(196, 143, 143);
 }
 
 .elipse {

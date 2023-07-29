@@ -121,7 +121,9 @@
   </div>
 </template>
 
-
+<script setup>
+document.title = "Frameworks"
+</script>
 
 
 <style>

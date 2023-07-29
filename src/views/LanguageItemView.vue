@@ -52,7 +52,7 @@ export default {
     const language = languages.filter((languageItem) => languageItem.id == route.params.id)[0]
     const frameworks = language.frameworks
 
-
+    document.title = language.name
     return {
       language,
       frameworks,
@@ -83,17 +83,19 @@ export default {
   top: 120px;
   border-radius: 720px;
   background: linear-gradient(180deg, #25a986 0%, rgba(60, 34, 13, 0) 100%);
-  filter: blur(350px);
+  /* filter: blur(350px); */
   width: 720px;
   height: 720px;
   flex-shrink: 0;
   z-index: -5432;
+  animation: name-of-animation 12s ease-in-out infinite;
 }
 
 .ellipse2 {
   position: absolute;
   border-radius: 720px;
   background: linear-gradient(180deg, #e68d07 0%, rgba(60, 34, 13, 0) 100%);
+  transition-property: filter;
   filter: blur(350px);
   width: 720px;
   height: 720px;
@@ -311,7 +313,26 @@ details[open] {
   margin-top: 50px;
 }
 
-/* .desc:: {
-  color: red;
-} */
+
+@keyframes name-of-animation {
+  0% {
+    filter: blur(350px);
+  }
+
+  20% {
+    filter: blur(450px);
+  }
+
+  50% {
+    filter: blur(580px);
+  }
+
+  80% {
+    filter: blur(450px);
+  }
+
+  100% {
+    filter: blur(350px);
+  }
+}
 </style>
