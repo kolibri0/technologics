@@ -157,16 +157,24 @@ export default defineComponent({
 
     .row {
       grid-template-columns: repeat(2, 180px);
-      width: 720px;
+      width: 360px;
       margin: 0 auto;
     }
 
     .row:nth-child(3) {
       grid-template-columns: repeat(2, 180px);
-      width: 720px;
+      width: 360px;
       margin: 20px auto;
     }
 
+    .circle {
+      width: 220px;
+      height: 220px;
+      border-radius: 220px;
+      left: 100px;
+      filter: blur(100px);
+      top: 200px;
+    }
   }
 
 }
